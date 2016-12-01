@@ -24,7 +24,7 @@ sudo make install
 
 # Modify
 
-The annotator is kind of experimental. The input files and the working directory are hard-coded. Open the project in QtCreator and:
+The annotator is kind of experimental. The input files are hard-coded. Open the project in QtCreator and:
 
 * annotatorview.cpp - at the bottom there are some commands like:
     * downloadFile()
