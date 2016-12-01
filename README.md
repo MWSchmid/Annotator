@@ -53,5 +53,5 @@ In the GUI, click:
         * type of the right node
         * ID of the right node
 
-Note: the input field in the bottom-left corner takes any Qt-RegExp and searches the entire annotation for matches (you can for example search for "gametophyte.{*}cytokinin|cytokinin.{*}gametophyte" to get all genes and terms associated with the words cytokinin AND gametophyte). All searches will be stored in the list above and can be saved with "saveExpr" and later on loaded with "loadExpr". "LoadSubset" can be used to load a pre-defined set of genes, and save results dumps whatever was found to a file.
+Note: the input field in the bottom-left corner takes any Qt-RegExp and searches the entire annotation for matches (you can for example search for "gametophyte.\*cytokinin|cytokinin.\*gametophyte" to get all genes and terms associated with the words cytokinin AND gametophyte). All searches will be stored in the list above and can be saved with "saveExpr" and later on loaded with "loadExpr". "LoadSubset" can be used to load a pre-defined set of genes, and save results dumps whatever was found to a file.
 
