@@ -43,16 +43,17 @@ annotator /path/to/working/dir
 ```
 
 In the GUI, click:
-    * download
-    * loadAnno
-    * linkAnno
-    * saveCyto (if you want a network of the annotation for Cytoscape, it's in XGMML format)
-    * exportTable - gives a table with five columns (useful for annotation in R - e.g. with topGO):
-        * ID of the left node
-        * type of the left node
-        * type of the right node
-        * ID of the right node
-        * description (of the right node)
+
+* download
+* loadAnno
+* linkAnno
+* saveCyto (if you want a network of the annotation for Cytoscape, it's in XGMML format)
+* exportTable - gives a table with five columns (useful for annotation in R - e.g. with topGO):
+    * ID of the left node
+    * type of the left node
+    * type of the right node
+    * ID of the right node
+    * description (of the right node)
 
 Note: the input field in the bottom-left corner takes any Qt-RegExp and searches the entire annotation for matches (you can for example search for "gametophyte.\*cytokinin|cytokinin.\*gametophyte" to get all genes and terms associated with the words cytokinin AND gametophyte). All searches will be stored in the list above and can be saved with "saveExpr" and later on loaded with "loadExpr". "LoadSubset" can be used to load a pre-defined set of genes, and save results dumps whatever was found to a file.
 
