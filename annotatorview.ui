@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>annotatorView</class>
+ <widget class="QWidget" name="annotatorView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1253</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>annotatorView</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../p502masterV1/p502iconResources.qrc">
+    <normaloff>:/icons/p502icon.png</normaloff>:/icons/p502icon.png</iconset>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_5">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QGroupBox" name="searchGroupBox">
+       <property name="title">
+        <string>search expression</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QListWidget" name="searchListWidget"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLineEdit" name="regExpLineEdit"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="regExpPushButton">
+            <property name="text">
+             <string>find</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="genesAndTermsGroupBox">
+       <property name="title">
+        <string>genes or terms</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QListWidget" name="genesAndTermsListWidget"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLineEdit" name="termLineEdit"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="termPushButton">
+            <property name="text">
+             <string>select</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="descriptionGroupBox">
+     <property name="title">
+      <string>description of selected term(s)</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QPlainTextEdit" name="descriptionPlainTextEdit"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QPushButton" name="downloadPushButton">
+          <property name="text">
+           <string>download</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="loadPushButton">
+          <property name="text">
+           <string>loadAnno</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="linkPushButton">
+          <property name="text">
+           <string>linkAnno</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="subSetPushButton">
+          <property name="text">
+           <string>loadSubSet</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="loadExpressionsPushButton">
+          <property name="text">
+           <string>loadExpr</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="saveExprPushButton">
+          <property name="text">
+           <string>saveExpr</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="saveResultsPushButton">
+          <property name="text">
+           <string>saveResults</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="exportCytoscapePushButton">
+          <property name="text">
+           <string>saveCyto</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="exportTablePushButton">
+          <property name="text">
+           <string>exportTable</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../p502masterV1/p502iconResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
