@@ -47,11 +47,31 @@ In the GUI, click:
     * loadAnno
     * linkAnno
     * saveCyto (if you want a network of the annotation for Cytoscape, it's in XGMML format)
-    * exportTable - gives a table with four columns (useful for annotation in R - e.g. with topGO):
+    * exportTable - gives a table with five columns (useful for annotation in R - e.g. with topGO):
         * ID of the left node
         * type of the left node
         * type of the right node
         * ID of the right node
+        * description (of the right node)
 
 Note: the input field in the bottom-left corner takes any Qt-RegExp and searches the entire annotation for matches (you can for example search for "gametophyte.\*cytokinin|cytokinin.\*gametophyte" to get all genes and terms associated with the words cytokinin AND gametophyte). All searches will be stored in the list above and can be saved with "saveExpr" and later on loaded with "loadExpr". "LoadSubset" can be used to load a pre-defined set of genes, and save results dumps whatever was found to a file.
+
+# Use the table in R
+
+```R
+source("/path/to/Annotator/enrichmentWrappers.R")
+
+interest <- "a set of gene IDs to test for enrichment"
+universe <- "a larger set of gene IDs - the background"
+rDir <- "/path/to/a/directory/for/the/results"
+prePrefix <- "just something added to the file name"
+mappingFile <- "/path/to/the/table/exported/above.txt"
+f.enrichment.wrapper(interest, universe, rDir, preprefix, mappingFile, onlyBP = FALSE)
+
+# note that the output of topGO contains simply the 50 top nodes (whether significant or not)
+# and - on top of the txt output, there is also tex output (still needs to be integrated in a document though)
+```
+
+
+
 
